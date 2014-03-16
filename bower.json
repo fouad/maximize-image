@@ -1,0 +1,28 @@
+{
+  "name": "maximize-image",
+  "devDependencies": {
+    "jquery": "*",
+    "jquery-tips": "*",
+    "rainbow": "*"
+  },
+  "version": "0.0.1",
+  "authors": [
+    "Fouad Matin <fm@fouad.co>"
+  ],
+  "description": "Maximize images easily using CSS3 transforms",
+  "main": "lib/maximize-image.js",
+  "keywords": [
+    "maximize",
+    "image"
+  ],
+  "license": "MIT",
+  "homepage": "http://fouad.github.io/maximize-image",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib/vendor",
+    "test",
+    "tests"
+  ]
+}

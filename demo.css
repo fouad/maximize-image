@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Droid Sans'
+}
+
+body {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+img {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.built-by {
+  text-align: center;
+}
+
+.built-by {
+
+}
+
+.built-by a {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+}
+
+.built-by img {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}

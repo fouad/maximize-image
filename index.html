@@ -1,0 +1,75 @@
+<html>
+<head>
+  <title>maximize-image</title>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="lib/vendor/rainbow/themes/github.css">
+  <link rel="stylesheet" type="text/css" href="demo.css">
+  <link rel="stylesheet" type="text/css" href="lib/vendor/jquery-tips/lib/jquery-tips.css">
+  <style>
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    img {
+      transition: -webkit-transform .3s linear;
+    } 
+  </style>
+</head>
+<body>
+  
+  <h1>maximize-image</h1>
+
+  <h3 class="text-center">Usage</h3>
+
+  <pre><code data-language="javascript">maximizeImage("img");</code></pre>
+
+  <h3 class="text-center">Options</h3>
+
+  <pre><code data-language="javascript">var opts = {
+  overlay: true,
+  // Boolean - overlay toggle
+  bg: "rgba(255, 255, 255, .65)"
+  // String - CSS color value for overlay background
+};
+
+maximizeImage("img", opts);</code></pre>
+
+  <h3 class="text-center">Demos</h3>
+
+  <div class="container">
+    <h5 class="text-center">CLICK THIS CAT</h5>
+
+    <img src="http://placekitten.com/450/450">
+
+    <h5 class="text-center">CLICK THIS OTHER CAT</h5>
+
+    <img src="http://placekitten.com/650/850">
+
+    <h5 class="text-center">CLICK ONE MORE CAT</h5>
+
+    <img src="http://placekitten.com/550/400">
+  </div>
+
+  <div class="built-by">
+    <h4>Built by</h4>
+    <div class="pfps-wrapper">
+      <a href='http://fouad.co' class="tip" data-tip="Fouad Matin" data-position="top">
+        <img src="https://gravatar.com/avatar/8b5fd7b1c5f69dc7502909c3ce3f9840?s=70" alt="">
+      </a>
+    </div>
+  </div>
+
+  <!-- vendor -->
+  <script src="lib/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="lib/vendor/rainbow/js/rainbow.min.js"></script>
+  <script src="lib/vendor/rainbow/js/language/generic.js"></script>
+  <script src="lib/vendor/rainbow/js/language/javascript.js"></script>
+
+  <script src="lib/maximize-image.js"></script>
+
+  <script>
+    maximizeImage("img");
+  </script>
+</body>
+</html>

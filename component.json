@@ -1,0 +1,8 @@
+{
+  "name": "maximize-image",
+  "repository": "fouad/maximize-image",
+  "version": "0.0.1",
+  "scripts": [
+    "lib/maximize-image.js"
+  ]
+}
