@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>jquery-tips - Demo page</title>
+
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="lib/jquery-tips.css">
+
+  <link rel="stylesheet" class="theme-link">
+  <link rel="stylesheet" href="lib/vendor/rainbow/themes/github.css">
+
+  <link rel="stylesheet" type="text/css" href="example.css">
+
+</head>
+<body>
+
+  <h1>jquery-tips</h1>
+  <h2>Just another jQuery plugin for tooltips</h2>
+
+  <!-- docs -->
+  <b>Usage:</b>
+
+  <p>Import the <code>jquery-tips.css</code> and <code>jquery-tips.js</code> files. Then:</p>
+
+  <pre><code data-language="javascript">$(document).ready(function() {
+  // Extracts tooltip text from `title` or `data-tip` attribute
+  // Examples below
+  $(".tip").tips();
+});</code></pre>
+
+  <!-- demos -->
+
+  <div class="demos">
+
+    <h3>Simple</h3>
+
+    <pre><code data-language="html"><p>Example sentence with a <u class="tip" data-tip="Meta" >tooltip</u> in the middle of a sentence.</p></code></pre>
+
+    <p>Example sentence with a <u class="tip" data-tip="Meta">tooltip</u> in the middle of a sentence.</p>
+
+    <pre><code data-language="html"><img class="tip" title="Obligatory kitten photo" src="http://placekitten.com/100/100"></code></pre>
+
+    <img class="tip" title="Obligatory kitten photo" src="http://placekitten.com/100/100">
+
+    <h3>Positioning</h3>
+
+    <p>
+      <u class="tip" data-tip="Tooltip from above" data-position="top">Above</u> (hover)
+    </p>
+
+    <p>
+      <u class="tip" data-tip="Tooltip from below" data-position="bottom">Below</u> (hover)
+    </p>
+
+    <h3>Theming</h3>
+
+    <select class="themes">
+      <option value="">Default (Google)</option>
+      <option value="facebook">Facebook</option>
+      <option value="youtube">Youtube</option>
+      <option value="bootstrap">Bootstrap</option>
+      <option value="flatui">Flat UI</option>
+    </select>
+
+  </div>
+
+  <div class="built-by">
+    <h4>Built by</h4>
+    <div class="pfps-wrapper">
+      <a href='http://fouad.co' class="tip" data-tip="Fouad Matin" data-position="top">
+        <img src="https://gravatar.com/avatar/8b5fd7b1c5f69dc7502909c3ce3f9840?s=70" alt="">
+      </a>
+      <a href='http://jackhanford.com' class="tip" data-tip="Jack Hanford" data-position="top">
+        <img src="https://gravatar.com/avatar/194e8d62c38b487ec0744d2ccc0931fc?s=70" alt="">
+      </a>
+    </div>
+  </div>
+
+  <!-- vendor -->
+  <script src="lib/vendor/jquery/jquery.min.js"></script>
+  <script src="lib/vendor/rainbow/js/rainbow.min.js"></script>
+  <script src="lib/vendor/rainbow/js/language/generic.js"></script>
+  <script src="lib/vendor/rainbow/js/language/html.js"></script>
+
+  <!-- jquery-tips -->
+  <script src="lib/jquery-tips.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('.tip').tips();
+
+      $('.themes').change(function() {
+        var theme = $(this).val();
+
+        if (theme === "") {
+          return $(".theme-link").attr('href', null);
+        }
+
+        return $(".theme-link").attr('href', 'lib/themes/' + theme + ".css");
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.tips-content {
+  max-width: 200px;
+  padding: 3px 8px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000000;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.tips-caret {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.tips-caret-top .tips-content {
+  bottom: 0;
+  left: 50%;
+  padding-top: 10px;
+  border-width: 5px 5px 0;
+  z-index: 100;
+}
+
+.tips-caret-top:after {
+  margin-top: 19px;
+  padding-bottom: 9px;
+  z-index: 100;
+}
+
+.tips-caret-bottom:after {
+  margin-bottom: -3px;
+  z-index: 100;
+}

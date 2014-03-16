@@ -1,0 +1,23 @@
+{
+  "name": "jquery-tips",
+  "version": "0.1.1",
+  "main": [
+    "./lib/jquery.tips.js",
+    "./lib/jquery.tips.css",
+    "./lib/themes/bootstrap.css",
+    "./lib/themes/facebook.css",
+    "./lib/themes/flatui.css",
+    "./lib/themes/youtube.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "lib/vendor"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.0"
+  },
+  "devDependencies": {
+    "rainbow": "~1.1.9"
+  }
+}

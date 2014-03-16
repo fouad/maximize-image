@@ -1,0 +1,33 @@
+{
+  "name": "jquery-tips",
+  "version": "0.1.1",
+  "main": [
+    "./lib/jquery.tips.js",
+    "./lib/jquery.tips.css",
+    "./lib/themes/bootstrap.css",
+    "./lib/themes/facebook.css",
+    "./lib/themes/flatui.css",
+    "./lib/themes/youtube.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "lib/vendor"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.0"
+  },
+  "devDependencies": {
+    "rainbow": "~1.1.9"
+  },
+  "homepage": "https://github.com/fouad/jquery-tips",
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.1",
+    "commit": "63710359a32d85ed49dada4210d20e6e89d564cf"
+  },
+  "_source": "git://github.com/fouad/jquery-tips.git",
+  "_target": "*",
+  "_originalSource": "jquery-tips"
+}
